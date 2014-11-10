@@ -1,0 +1,4 @@
+Order deny,allow
+Deny from all
+
+RewriteRule ^(.*)$ /iwns.com/index.php?/$1 [L]
