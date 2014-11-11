@@ -964,6 +964,7 @@ a.button:hover {
   background: #C8C8C8;
   opacity: 0.6;
   cursor: not-allowed;
+
 }
 
 /* Adjacent buttons */
@@ -3411,9 +3412,10 @@ a.skip-link {
   }
 }
 @media only screen and (min-width: 771px) {
-  #header-nav {
-    display: block;
-    /* Force visibility */
+  #header-nav { display: inline;
+    float: left;
+    text-align: center;
+    width: 100%;
 
   }
 }
@@ -9834,7 +9836,10 @@ div.calendar table td.button {
   float: left;
 }
 .bContainer {
-  position: relative;
+ackground-position: center center !important;
+    background-size: cover !important;
+    height: 100%;
+    position: relative;
 }
 .rsABlock {
   position: relative;
@@ -9859,14 +9864,13 @@ div.calendar table td.button {
   background: #f06b50;
 }
 .slide1 .bContainer {
-  top: 36%;
 }
 .slide2 {
     background: #ffbc11;
     color:#000;
 }
 .slide2 .bContainer {
-  top: 24px;
+
 }
 .slide2 .txtCent {
   line-height: 44px;
@@ -9879,7 +9883,7 @@ div.calendar table td.button {
     color:#FFF;
 }
 .slide3 .bContainer {
-   top: 24px;
+
 }
 .slide3 span {
   line-height: 44px;
@@ -9943,7 +9947,7 @@ div.calendar table td.button {
   }
   .blockHeadline {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 32px;.category-description
   }
   .blockSubHeadline {
     font-size: 22px;
@@ -9951,13 +9955,21 @@ div.calendar table td.button {
   }
 }
 
-ul.navigation {width:100%; padding:0px 20px;}
+ul.navigation { float: none;
+    margin: 0 auto;
+    padding: 0 20px;}
+	.bContainer img {}
+	.bContainer .txtCent {top:100px;}
+	ul.navigation .widget-static-block {display: inline-block;
+    float: none;}
 ul.navigation li {float:left; margin-right:20px; }
 ul.na1ul_1 {padding-left:20px;}
 ul.navigation li ul {width:100%; background-color:#000; height:200px; position: absolute; left:0}
 ul.navigation li ul li {width:100%; }
 ul.navigation li ul li a {color:#fff;}
-
+.category-description { margin: 0 auto;
+    max-width: 80%;
+    text-align: center;}
 .nav_DD {float:left; margin-right:10px;}
 .nav_CB {float:left;}
 .nav_DD img { max-height:200px; position:relative}
